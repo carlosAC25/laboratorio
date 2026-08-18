@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POKÉMON FIT 2026 | Principal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Fondo plano oscuro -->
+  <div class="stars-bg"></div>
+
+  <!-- Navegación -->
+  <header class="navbar">
+    <div class="logo-container">
+      <span class="logo-text">POKÉ<span class="highlight">FIT</span></span>
+      <span class="logo-year">2026</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html">NOVEDADES</a>
+      <a href="pokem.html">POKÉMON</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="nav-actions">
+      <!-- Botón de colapso (Solo visible en dispositivos móviles) -->
+      <button class="toggle-btn" id="menuToggle" aria-label="Abrir menú">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Panel colapsable lateral con JS -->
+  <aside class="side-panel" id="sidePanel">
+    <button class="close-btn" id="closePanel">&times;</button>
+    <div class="panel-content">
+      <span class="tagline">• EDICIÓN CYBER POKÉMON •</span>
+      <h3>MÁS INFORMACIÓN</h3>
+      <nav class="mobile-nav">
+        <a href="index.html">NOVEDADES</a>
+        <a href="pokemons.html">POKÉMON</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <ul class="panel-list">
+        <li>⚡ Pokémon Alfa Certificados</li>
+        <li>🧬 Genética IV/EV MAX</li>
+        <li>🌐 Conexión Global Directa</li>
+      </ul>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Hero Principal -->
+  <section class="hero-section" id="inicio">
+    <div class="badge-tag">
+      <span class="dot"></span> XVIII FORO DE INNOVACIÓN POKÉMON
+    </div>
+
+    <!-- Título Central -->
+    <div class="cyber-frame">
+      <div class="corner tl"></div>
+      <div class="corner tr"></div>
+      <div class="corner bl"></div>
+      <div class="corner br"></div>
+      <h1 class="main-title">POKÉ<span class="gradient-text">MON</span></h1>
+      <p class="subtitle">XVII AÑOS DE EVOLUCIÓN</p>
+    </div>
+
+    <!-- Leyenda y Galería -->
+    <div class="hero-footer">
+      <h2>3 DÍAS. 8 SECCIONES. POKÉMON DE TODO EL MUNDO.</h2>
+      <p class="hero-subtext">La tecnología del futuro se construye hoy en tus batallas.</p>
+      
+      <div class="pokemon-showcase">
+        <div class="poke-card">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png" alt="Charizard Cyber">
+          <span>CHARIZARD CYBER</span>
+        </div>
+        <div class="poke-card">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png" alt="Mewtwo Neo">
+          <span>MEWTWO NEO</span>
+        </div>
+        <div class="poke-card">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu Volt">
+          <span>PIKACHU VOLT</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
