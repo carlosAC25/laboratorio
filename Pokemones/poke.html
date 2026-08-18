@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>POKÉMON FIT 2026 | Principal</title>
+  <title>POKÉMON FIT 2026 | Catálogo Pokémon</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,13 +22,13 @@
     </div>
 
     <nav class="nav-links">
-      <a href="Index.html">NOVEDADES</a>
-      <a href="Pokemones/poke.html">POKÉMON</a>
-      <a href="contacto.html">Contacto</a>
+      <a href="../Index.html">NOVEDADES</a>
+      <a href="poke.html" class="active">POKÉMON</a>
+      <a href="../Index.html#contacto">Contacto</a>
     </nav>
 
     <div class="nav-actions">
-      <!-- Botón de colapso (Solo visible en dispositivos móviles) -->
+      <!-- Botón de colapso para celular -->
       <button class="toggle-btn" id="menuToggle" aria-label="Abrir menú">
         <span class="hamburger"></span>
       </button>
@@ -42,9 +42,9 @@
       <span class="tagline">• EDICIÓN CYBER POKÉMON •</span>
       <h3>MÁS INFORMACIÓN</h3>
       <nav class="mobile-nav">
-        <a href="Index.html">NOVEDADES</a>
-        <a href="Pokemones/poke.html">POKÉMON</a>
-        <a href="#contacto">Contacto</a>
+        <a href="../Index.html">NOVEDADES</a>
+        <a href="poke.html" class="active">POKÉMON</a>
+        <a href="../Index.html#contacto">Contacto</a>
       </nav>
       <ul class="panel-list">
         <li>⚡ Pokémon Alfa Certificados</li>
@@ -55,43 +55,59 @@
   </aside>
   <div class="overlay" id="overlay"></div>
 
-  <!-- Hero Principal -->
-  <section class="hero-section" id="inicio">
+  <!-- Sección de Pokémones -->
+  <main class="hero-section">
     <div class="badge-tag">
-      <span class="dot"></span> XVIII FORO DE INNOVACIÓN POKÉMON
+      <span class="dot"></span> CATÁLOGO DE ESPECIES CYBER
     </div>
 
-    <!-- Título Central -->
+    <!-- Título Principal con Marco -->
     <div class="cyber-frame">
       <div class="corner tl"></div>
       <div class="corner tr"></div>
       <div class="corner bl"></div>
       <div class="corner br"></div>
-      <h1 class="main-title">POKÉ<span class="gradient-text">MON</span></h1>
-      <p class="subtitle">XVII AÑOS DE EVOLUCIÓN</p>
+      <h1 class="main-title">CATÁ<span class="gradient-text">LOGO</span></h1>
+      <p class="subtitle">EJEMPLARES DISPONIBLES</p>
     </div>
 
-    <!-- Leyenda y Galería -->
+    <!-- Grid de Pokémones -->
     <div class="hero-footer">
-      <h2>3 DÍAS. 8 SECCIONES. POKÉMON DE TODO EL MUNDO.</h2>
-      <p class="hero-subtext">La tecnología del futuro se construye hoy en tus batallas.</p>
-      
       <div class="pokemon-showcase">
+        
         <div class="poke-card">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png" alt="Charizard Cyber">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png" alt="Charizard">
           <span>CHARIZARD CYBER</span>
         </div>
+
         <div class="poke-card">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png" alt="Mewtwo Neo">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png" alt="Mewtwo">
           <span>MEWTWO NEO</span>
         </div>
+
         <div class="poke-card">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu Volt">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu">
           <span>PIKACHU VOLT</span>
         </div>
+
+        <div class="poke-card">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png" alt="Blastoise">
+          <span>BLASTOISE HYDRO</span>
+        </div>
+
+        <div class="poke-card">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png" alt="Venusaur">
+          <span>VENUSAUR BIO</span>
+        </div>
+
+        <div class="poke-card">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png" alt="Gengar">
+          <span>GENGAR SHADOW</span>
+        </div>
+
       </div>
     </div>
-  </section>
+  </main>
 
   <script src="app.js"></script>
 </body>
