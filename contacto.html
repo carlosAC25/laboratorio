@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - PokéFit</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* CSS INTERNO: Solo controla el formulario y su contenedor */
+        
+        .contenedor-formulario {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Restamos el alto aproximado del navbar para que quede bien centrado */
+            min-height: calc(100vh - 80px); 
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        form {
+            /* Usamos colores oscuros y bordes neón para que combine con tu CSS externo */
+            background: rgba(10, 25, 47, 0.8);
+            padding: 35px 25px;
+            border-radius: 12px;
+            border: 1px solid var(--border-neon, rgba(0, 255, 136, 0.4));
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+
+        .campo {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: var(--neon-cyan, #00e5ff);
+            font-family: var(--font-cyber, 'Orbitron', sans-serif);
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            background-color: #03080f; /* Fondo oscuro del input */
+            border: 1px solid var(--border-neon, rgba(0, 255, 136, 0.4));
+            border-radius: 6px;
+            color: var(--text-white, #ffffff);
+            box-sizing: border-box;
+            font-size: 16px;
+            font-family: var(--font-sub, 'Rajdhani', sans-serif);
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            border-color: var(--neon-green, #00ff88);
+            box-shadow: 0 0 8px rgba(0, 255, 136, 0.3);
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: transparent;
+            color: var(--neon-green, #00ff88);
+            border: 1px solid var(--neon-green, #00ff88);
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: var(--font-cyber, 'Orbitron', sans-serif);
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: var(--neon-green, #00ff88);
+            color: #03080f; /* Texto oscuro al hacer hover */
+            box-shadow: 0 0 15px rgba(0, 255, 136, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-container">
+            <span class="logo-text">POKÉ<span class="highlight">FIT</span></span>
+            <span class="logo-year">2026</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="Index.html">NOVEDADES</a>
+            <a href="Pokemones/poke.html">POKÉMON</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        
+        <!-- Botón móvil (para que no falte la estructura que tienes en tu CSS externo) -->
+        <button class="toggle-btn">
+            <span class="hamburger"></span>
+        </button>
+    </header>
+
+    <!-- Usamos un contenedor principal para centrar el formulario sin afectar el body -->
+    <main class="contenedor-formulario">
+        <form action="#" method="POST">
+            <div class="campo">
+                <label for="nombre">NOMBRE</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">CORREO ELECTRÓNICO</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">MENSAJE</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">ENVIAR</button>
+        </form>
+    </main>
+
+</body>
+</html>
